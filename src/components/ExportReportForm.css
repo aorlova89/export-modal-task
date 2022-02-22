@@ -1,0 +1,61 @@
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text], input[type=email], input[type=time], input[type=date], select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+input[type=text], input[type=email] {
+    width: 80%;
+}
+
+input[type=submit], input[type=button] {
+    background-color: #282c34;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[value="Cancel"]{
+    margin-right: 10px;
+}
+
+.btn-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.disabled {
+    background-color: #bababa!important;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    margin-top: 20px;
+    background-color: #bababa;
+}

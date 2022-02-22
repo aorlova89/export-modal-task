@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+
+import {Modal} from "./components/Modal";
+import {ExportReportForm} from "./components/ExportReportForm";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
+
+    return (
+        <div className="App">
+            <button className="open-modal-btn"
+                    onClick={() => setIsModalVisible(true)}
+            >
+                Open Modal Component
+            </button>
+            <Modal
+                isModalVisible={isModalVisible}
+                content={<ExportReportForm close={handleCancel}/>}
+            />
+        </div>
+    );
+
 }
 
 export default App;

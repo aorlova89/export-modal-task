@@ -1,0 +1,39 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content{
+    width: 700px;
+    background-color: #ffffff;
+}
+
+.modal-header, modal-footer {
+    padding: 10px;
+}
+
+.modal-header {
+    background-color: #bababa;
+}
+
+.modal-footer{
+   align-content: flex-end;
+    align-items: flex-end;
+}
+
+.modal-title{
+    margin: 0;
+}
+
+.modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
